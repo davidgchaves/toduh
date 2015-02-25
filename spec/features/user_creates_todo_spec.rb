@@ -1,5 +1,4 @@
 require "rails_helper"
-require "support/features/sign_in"
 
 feature "User creates todo" do
   scenario "successfully" do
