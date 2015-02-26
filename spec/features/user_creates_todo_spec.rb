@@ -6,6 +6,6 @@ feature "User creates todo" do
 
     create_todo "Relearn BDD/TDD for the xxxth time!"
 
-    expect(page).to have_css ".todos li", text: "Relearn BDD/TDD for the xxxth time!"
+    expect(page).to display_todo "Relearn BDD/TDD for the xxxth time!"
   end
 end
