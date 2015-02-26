@@ -6,4 +6,8 @@ module TodosHelper
       button_to "Mark complete", todo_completion_path(todo)
     end
   end
+
+  def completed_class_for(todo)
+    "completed" if todo.completed?
+  end
 end

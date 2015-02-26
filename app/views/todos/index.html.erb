@@ -1,6 +1,6 @@
 <ul class="todos">
   <% @todos.each do |todo| %>
-    <li class="<%= "completed" if todo.completed? %>">
+    <li class=<%= completed_class_for todo %>>
       <%= todo.title %>
       <%= render_completion_button todo %>
     </li>
