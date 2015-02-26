@@ -14,11 +14,11 @@ describe Todo, "#completed?" do
   end
 end
 
-describe Todo, "#complete!" do
+describe Todo, "#mark_complete!" do
   it "updates completed_at" do
     todo = Todo.create! completed_at: nil
 
-    todo.complete!
+    todo.mark_complete!
 
     todo.reload
 

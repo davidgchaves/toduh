@@ -1,6 +1,6 @@
 class CompletionsController < ApplicationController
   def create
-    todo.complete!
+    todo.mark_complete!
     redirect_to todos_path
   end
 

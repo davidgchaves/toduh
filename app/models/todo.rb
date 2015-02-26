@@ -3,7 +3,7 @@ class Todo < ActiveRecord::Base
     !completed_at.nil?
   end
 
-  def complete!
+  def mark_complete!
     touch :completed_at
   end
 
